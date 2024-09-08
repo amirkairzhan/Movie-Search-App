@@ -68,5 +68,3 @@ function appendNode(parent, element) {
 function movieInformation(movie) {
     return location.href=`movie.html?i=${movie.imdbID}`
 }
-
-// li.onclick = location.href=`movie.html?i=${movie.imdbID}`;
