@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,700;1,14..32,700&display=swap');
+
+body {
+    padding: 50px 20px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.error {
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: red;
+}
+
+/*Поиск*/
+.search__section {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.search__input {
+    padding-left: 15px;
+    width: 500px;
+    height: 60px;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000;
+    box-sizing: border-box;
+}
+
+.search__btn {
+    font-family: inherit;
+    width: 250px;
+    height: 60px;
+    font-size: 32px;
+    line-height: 39px;
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.search__btn:hover {
+    background-color: #0094ff;
+    border: none;
+}
+
+/*Список фильмов*/
+.movies__section {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.movie {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 650px;
+    background: #d9d9d9;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.movie:hover {
+    background: gray;
+}
+
+.movie__poster {
+    width: 100px;
+    height: 148px;
+}
+
+.movie__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000;
+}
+
+.movie__year {
+    margin-top: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    color: #0094ff;
+}
+
+.movie__type {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000;
+}
+
+
+@media (max-width: 1439px) {
+    .error {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .movies__section {
+        margin-top: 35px;
+        gap: 20px;
+     }
+    
+    .movie {
+        gap: 30px;
+        width: 500px;
+    }
+    
+    .movie__poster {
+        width: 80px;
+        height: 120px;
+    }
+    
+    .movie__title {
+        font-size: 30px;
+        line-height: 38px;
+    }
+    
+    .movie__year {
+        margin-top: 8px;
+        font-size: 22px;
+        line-height: 25px;
+    }
+    
+    .movie__type {
+        margin-top: 12px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width: 1119px) {
+    body {
+        padding: 30px 15px;
+    }
+
+    .error {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .search__section {
+        gap: 20px;
+    }
+
+    .search__input {
+        padding-left: 10px;
+        width: 400px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .search__btn {
+        width: 180px;
+        height: 50px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .movies__section {
+        margin-top: 25px;
+        gap: 15px;
+     }
+    
+    .movie {
+        padding: 20px;
+        gap: 15px;
+        width: 350px;
+        border-radius: 25px;
+
+    }
+    
+    .movie__poster {
+        width: 60px;
+        height: 90px;
+    }
+    
+    .movie__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    
+    .movie__year {
+        margin-top: 5px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .movie__type {
+        margin-top: 8px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    body {
+        padding: 15px 30px;
+    }
+
+    .error {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .search__section {
+        gap: 10px;
+    }
+
+    .search__input {
+        padding-left: 10px;
+        width: 60%;
+        height: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .search__btn {
+        width: 30%;
+        height: 40px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .movies__section {
+        margin-top: 15px;
+        gap: 10px;
+     }
+    
+    .movie {
+        padding: 15px;
+        gap: 15px;
+        width: 100%;
+        border-radius: 15px;
+
+    }
+    
+    .movie__poster {
+        width: 60px;
+        height: 90px;
+    }
+    
+    .movie__title {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    
+    .movie__year {
+        margin-top: 5px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    
+    .movie__type {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
