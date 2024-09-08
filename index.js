@@ -9,7 +9,7 @@ moviesNode.innerHTML = '';
 buttonNode.addEventListener('click', function () {
     const inputValue = inputNode.value;
 
-    fetch(`http://www.omdbapi.com/?s=${inputValue}&apikey=713687dc`)
+    fetch(`https://www.omdbapi.com/?s=${inputValue}&apikey=713687dc`)
         .then(response => response.json())
         .then(json => {
             let moviesList = json.Search;
